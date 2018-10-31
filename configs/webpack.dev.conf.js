@@ -98,6 +98,7 @@ const devWebpackConfig = webpackMerge(commonConfig[0], {
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': config.dev.env,
+        'BASE_URL':'"winxin"'
       }
     }),
     /*
@@ -188,3 +189,4 @@ module.exports = new Promise((resolve, reject) => {
     }
   })
 })
+console.log('test')

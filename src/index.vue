@@ -1,12 +1,13 @@
 <template>
   <div class="wrapper">
     <image :src="logo" class="logo" />
-    <text class="greeting">测试测试!</text>
+    <text class="greeting">The environment is ready!</text>
     <router-view/>
   </div>
 </template>
 
 <script>
+console.log(process.env)
 export default {
   name: 'App',
   data () {
